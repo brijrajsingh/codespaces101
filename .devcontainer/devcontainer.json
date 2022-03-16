@@ -38,7 +38,9 @@
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [5000],
+
+	"portsAttributes": {"5000": {"label": "Math API"}},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "python -m pip install --upgrade pip && pip install --user -r requirements.txt && pip install --user -r dev_requirements.txt",
